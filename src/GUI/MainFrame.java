@@ -35,7 +35,7 @@ public class MainFrame extends JFrame {
         setResizable(false);
         setVisible(true);
         addKeyListener(new KeyBoardListener());
-        // 添加墙壁
+
         for (int i = 1; i <= 7; i++) {
             wallArrayList.add(new Wall("src/Imgs/Wall.png", 50, 75 + (i - 1) * 33, this));
         }
@@ -63,7 +63,6 @@ public class MainFrame extends JFrame {
         for (int i = 1; i <= 7; i++){
             hardWallArrayList.add(new HardWall("src/Imgs/HardWall.png", 446 + (i - 1) * 33, 365, this));
         }
-        ////////////////////////////////
         for (int i = 1; i <= 7; i++) {
             wallArrayList.add(new Wall("src/Imgs/Wall.png", 50, 450 + (i - 1) * 33, this));
         }
@@ -90,11 +89,10 @@ public class MainFrame extends JFrame {
         wallArrayList.add(new Wall("src/Imgs/Wall.png", 416, 694, this));
         wallArrayList.add(new Wall("src/Imgs/Wall.png", 416, 727, this));
         wallArrayList.add(new Wall("src/Imgs/Wall.png", 416, 760, this));
-        ////////////////////////////////////
 
 
         while (true) {
-            if (cnt % 100 == 1 && enemyCnt <= 5) {
+            if (cnt % 100 == 1 && enemyCnt <= 20) {
                 Random r = new Random();
                 int rx = r.nextInt(50, 750);
                 enemyArrayList.add(new BadTank("src/Imgs/2_U.png", rx, 20, this,
