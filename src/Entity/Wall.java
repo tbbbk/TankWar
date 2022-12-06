@@ -5,7 +5,7 @@ import GUI.MainFrame;
 import java.awt.*;
 
 public class Wall extends entityObject {
-    int size = 32;
+    int size = 33;
 
     public Wall(String img, int x, int y, MainFrame gameFrame) {
         super(img, x, y, gameFrame);

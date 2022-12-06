@@ -9,7 +9,7 @@ import java.util.Random;
 
 public abstract class Tank extends entityObject {
     public int width = 40;
-    public int height = 50;
+    public int height = 40;
     public int speed;
     public int Direction;
     public String upImg;

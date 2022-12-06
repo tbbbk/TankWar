@@ -42,6 +42,10 @@ public class Bullet extends entityObject{
     }
 
     public void hitEnemy() {
+        if (this.getRec().intersects(this.gameFrame.house.getRec())) {
+            this.gameFrame.state = 2;
+            return;
+        }
         ArrayList<BadTank> e = this.gameFrame.enemyArrayList;
         for (BadTank b: e) {
             if (b.getRec().intersects(this.getRec())) {

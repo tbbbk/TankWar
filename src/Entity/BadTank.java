@@ -34,7 +34,7 @@ public class BadTank extends Tank{
         Point p = getHead();
         Random r = new Random();
         int rNum =r.nextInt(100);
-        if (rNum < 4) {
+        if (rNum < 2) {
             this.gameFrame.bulletArrayList.add(new BadBullet("src/Imgs/Bullet.png", p.x, p.y, this.gameFrame, this.Direction));
         }
     }

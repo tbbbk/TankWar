@@ -18,6 +18,6 @@ public class House extends entityObject {
 
     @Override
     public Rectangle getRec() {
-        return new Rectangle(x, y, size, size);
+        return new Rectangle(x, y, 77, 54);
     }
 }
